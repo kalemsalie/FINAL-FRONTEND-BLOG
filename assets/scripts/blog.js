@@ -5,7 +5,11 @@ const params = new URLSearchParams(window.location.search);
 const blogPost = document.getElementById("blog-item");
 
 if (params.has("blogID")) {
-  fetch(`http://127.0.0.1:5000/show-blog-item/${params.get("blogID")}`)
+  fetch(
+    `https://sheltered-garden-25664.herokuapp.com/show-blog-item/${params.get(
+      "blogID"
+    )}`
+  )
     .then((response) => response.json())
     .then((blog) => {
       console.log(blog);

@@ -11,7 +11,7 @@ function createBlogPost() {
 
   console.log(blogPost);
 
-  fetch("http://127.0.0.1:5000/add-data/", {
+  fetch("https://sheltered-garden-25664.herokuapp.com/add-data/", {
     method: "POST",
     body: JSON.stringify(blogPost),
     headers: {
@@ -25,6 +25,6 @@ function createBlogPost() {
       document.getElementById("create-form").reset();
       let show = document.getElementById("show-data");
       show.innerHTML +=
-        '<button ><a href="http://127.0.0.1:5000/show-data/" target="_blank" >Show data</a></button>';
+        '<button ><a href="https://sheltered-garden-25664.herokuapp.com/show-data/" target="_blank" >Show data</a></button>';
     });
 }

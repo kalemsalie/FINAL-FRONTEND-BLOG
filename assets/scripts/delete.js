@@ -1,7 +1,7 @@
 function showData() {
   let list = document.getElementById("data-items");
 
-  fetch("http://127.0.0.1:5000/show-data/")
+  fetch("https://sheltered-garden-25664.herokuapp.com/show-data/")
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
@@ -18,7 +18,7 @@ function createtr(blog) {
       <td>${blog.image}</td>
       <td>${blog.body}</td>
 
-      <td><a href="http://127.0.0.1:5000/delete-data/${blog.id}/">DELETE</a>
+      <td><a href="https://sheltered-garden-25664.herokuapp.com/delete-data/${blog.id}/">DELETE</a>
       </td>
       </tr>`;
 

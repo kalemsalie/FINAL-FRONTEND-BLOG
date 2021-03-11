@@ -3,7 +3,7 @@ function getPosts() {
   let list = document.getElementById("blog-items");
 
   // Fetch the data
-  fetch("http://127.0.0.1:5000/show-data/")
+  fetch("https://sheltered-garden-25664.herokuapp.com/show-data/")
     .then((response) => response.json())
     .then((json) => {
       console.log(json);

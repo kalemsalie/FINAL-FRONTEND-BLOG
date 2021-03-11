@@ -6,7 +6,7 @@ function subscribeUser() {
     email: inputs[1].value,
   };
   console.log(user);
-  fetch("http://127.0.0.1:5000/add-user/", {
+  fetch("https://sheltered-garden-25664.herokuapp.com/add-user/", {
     method: "POST",
     body: JSON.stringify(user),
     headers: {
